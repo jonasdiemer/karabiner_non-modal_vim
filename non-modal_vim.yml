@@ -1202,7 +1202,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1226,7 +1225,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1244,7 +1242,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1268,7 +1265,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1290,7 +1286,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1316,7 +1311,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:

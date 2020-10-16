@@ -2144,9 +2144,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2188,9 +2185,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2221,9 +2215,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2265,9 +2256,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2307,9 +2295,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2357,9 +2342,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
