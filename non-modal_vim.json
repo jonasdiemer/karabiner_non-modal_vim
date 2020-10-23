@@ -1416,9 +1416,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1473,9 +1470,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1530,9 +1524,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1594,9 +1585,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1656,9 +1644,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1718,9 +1703,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1834,9 +1816,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -1896,9 +1875,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2020,9 +1996,6 @@
                 "name": "vim_mode",
                 "value": 0
               }
-            },
-            {
-              "shell_command": "osascript -e 'display notification with title \"-- INSERT --\"'"
             }
           ],
           "conditions": [
@@ -2765,36 +2738,6 @@
         {
           "type": "basic",
           "from": {
-            "key_code": "i"
-          },
-          "to": [
-            {
-              "set_variable": {
-                "name": "vim_mode",
-                "value": 0
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "com.github.atom",
-                "com.jetbrains.pycharm",
-                "com.visualstudio.code.oss"
-              ]
-            },
-            {
-              "name": "vim_mode",
-              "type": "variable_if",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
             "key_code": "i",
             "modifiers": {
               "mandatory": [
@@ -2809,36 +2752,6 @@
                 "left_command"
               ]
             },
-            {
-              "set_variable": {
-                "name": "vim_mode",
-                "value": 0
-              }
-            }
-          ],
-          "conditions": [
-            {
-              "type": "frontmost_application_unless",
-              "bundle_identifiers": [
-                "com.googlecode.iterm2",
-                "com.github.atom",
-                "com.jetbrains.pycharm",
-                "com.visualstudio.code.oss"
-              ]
-            },
-            {
-              "name": "vim_mode",
-              "type": "variable_if",
-              "value": 1
-            }
-          ]
-        },
-        {
-          "type": "basic",
-          "from": {
-            "key_code": "a"
-          },
-          "to": [
             {
               "set_variable": {
                 "name": "vim_mode",

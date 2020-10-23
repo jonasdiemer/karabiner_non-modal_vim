@@ -795,7 +795,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -826,7 +825,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -857,7 +855,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -892,7 +889,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -926,7 +922,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -960,7 +955,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1024,7 +1018,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1058,7 +1051,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1126,7 +1118,6 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
-          - shell_command: osascript -e 'display notification with title "-- INSERT --"'
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -1548,23 +1539,6 @@ rules:
             value: 1
   - description: (Vim 6) i,I,a,A,o,O
     manipulators:
-      - type: basic  # [i] Exit vim mode at the cursor
-        from:
-          key_code: i
-        to:
-          - set_variable:
-              name: vim_mode
-              value: 0
-        conditions:
-          - type: frontmost_application_unless
-            bundle_identifiers:
-              - com.googlecode.iterm2
-              - com.github.atom
-              - com.jetbrains.pycharm
-              - com.visualstudio.code.oss
-          - name: vim_mode
-            type: variable_if
-            value: 1
       - type: basic  # [I] Exit vim mode at the start of the line
         from:
           key_code: i
@@ -1575,23 +1549,6 @@ rules:
           - key_code: left_arrow
             modifiers:
               - left_command
-          - set_variable:
-              name: vim_mode
-              value: 0
-        conditions:
-          - type: frontmost_application_unless
-            bundle_identifiers:
-              - com.googlecode.iterm2
-              - com.github.atom
-              - com.jetbrains.pycharm
-              - com.visualstudio.code.oss
-          - name: vim_mode
-            type: variable_if
-            value: 1
-      - type: basic  # [a] Exit vim mode at the cursor
-        from:
-          key_code: a
-        to:
           - set_variable:
               name: vim_mode
               value: 0
