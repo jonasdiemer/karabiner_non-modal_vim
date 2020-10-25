@@ -20,6 +20,8 @@ rules:
           - set_variable:
               name: vim_mode
               value: 0
+        to_if_alone:
+          key_code: escape
         conditions:
           - type: frontmost_application_unless
             bundle_identifiers:
@@ -32,7 +34,7 @@ rules:
             value: 1
         parameters:
           basic.to_if_alone_threshold_milliseconds: 0
-          basic.to_if_held_down_threshold_milliseconds: 100
+          basic.to_if_held_down_threshold_milliseconds: 50
   - description: (Vim 4/11) dd,de,db,d0,d^,d$,dgg,dG,d{,d}
     manipulators:
       - type: basic
@@ -1150,7 +1152,7 @@ rules:
             value: 1
       - type: basic  # [X] Delete back
         from:
-          key_code: x
+          key_code: X
           modifiers:
             mandatory:
               - shift
@@ -1631,3 +1633,38 @@ rules:
           - name: vim_mode
             type: variable_if
             value: 1
+  - description: (Vim 7) v
+    manipulators:
+      - type: basic  # [v] Mark entire line
+        from:
+          key_code: v
+        to:
+          - key_code: left_arrow
+            modifiers:
+              - left_command
+          - key_code: left_arrow
+            modifiers:
+              - left_command
+          - key_code: right_arrow
+            modifiers:
+              - left_command
+              - left_shift
+        conditions:
+          - type: frontmost_application_unless
+            bundle_identifiers:
+              - com.googlecode.iterm2
+              - com.github.atom
+              - com.jetbrains.pycharm
+              - com.visualstudio.code.oss
+          - name: vim_mode
+            type: variable_if
+            value: 1
+  - description: (Vim 8) tap left caps for esc
+    manipulators:
+      - type: basic
+        from:
+          key_code: grave_accent_and_tilde
+        to_if_held_down:
+          - key_code: escape
+        parameters:
+          basic.to_if_held_down_threshold_milliseconds: 100
